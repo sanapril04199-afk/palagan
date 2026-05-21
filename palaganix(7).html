@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palaganix — Enterprise Digital Transformation Partner</title>
+    <meta name="description" content="Palaganix adalah mitra transformasi digital enterprise Indonesia. Kami membangun software kustom, website konversi tinggi, integrasi AI, dan sistem ERP untuk UMKM hingga perusahaan nasional. Konsultasi gratis tersedia.">
+    <meta name="keywords" content="digital transformation Indonesia, software development Indonesia, AI integration, website profesional, custom software, Palaganix">
+    <meta property="og:title" content="Palaganix — Enterprise Digital Transformation Partner">
+    <meta property="og:description" content="Solusi software modern, AI, dan digital transformation yang scalable untuk bisnis Indonesia. Mulai konsultasi gratis hari ini.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://palaganix.my.id">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACMklEQVR4nO2XsW7UQBCG/3/WF9JEIOhOpxMVokRCoqOlpuMZeAvE25Ceh0BUVKRLA0uLFF1AufX8FF4H5+5s314sKOCXLFmrndlvd2ZnbGJb3DE2JBXO31rMNpzdymExwHw+/wwAkgggAbgYswGwIjmTVJlZkPQ+xvgWzWa8BKAi+RgAyP1P3t2vAByZGcwM7n7egStSJalLbAUgl5JmkgzAj9KFrwHQHJvQ0H+X9DGHY6dICoBJek4y5Hfrm78PAAA4ySDpU4zxxZjRfD5/BOAMhfEeAmhl+SF23wbLsMfSNJdlEwBodtUHgAygqQAOjt1U+usAmyEggIDhHOBtsn4MIAGoB+bXAEByNXUSEgAk3VssFs8kMd/3G2rH3f0hJuoZLYBJAsknkj7kxXYaSIKknwDWJGdTAVz7d/c0ML+tmJckj/O7kTy4IG0lYQhhdFd1Xd8nCZIwM6SUTlr7QwGcpEk6c/c3fVmeCxAlrSW1PYAk2244lMCDAG3Av8UY35U66ag4MTdDMMtjfXWAALRcLpcppVNJFQCRdJKQdB5jfIXmJIbKeS+A0NSCwWa0Xq+PzOxp99shAzxAYR7sakajIumSrrJ9+x1pAFalvg4CyGpbdxeguERXaOJVZyclWdyNc/sU14PKzAKAQBIppbv7GEkyM7vTHSMJdz/ps+kFcPfXub4HAF/H1gaAlNKXqqpeopNwIQSSvMDvU/yj/xcHi7iZiCV5EHrGi6vhf/3b+gUCF/lQSUWQhgAAAABJRU5ErkJggg==">
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACMklEQVR4nO2XsW7UQBCG/3/WF9JEIOhOpxMVokRCoqOlpuMZeAvE25Ceh0BUVKRLA0uLFF1AufX8FF4H5+5s314sKOCXLFmrndlvd2ZnbGJb3DE2JBXO31rMNpzdymExwHw+/wwAkgggAbgYswGwIjmTVJlZkPQ+xvgWzWa8BKAi+RgAyP1P3t2vAByZGcwM7n7egStSJalLbAUgl5JmkgzAj9KFrwHQHJvQ0H+X9DGHY6dICoBJek4y5Hfrm78PAAA4ySDpU4zxxZjRfD5/BOAMhfEeAmhl+SF23wbLsMfSNJdlEwBodtUHgAygqQAOjt1U+usAmyEggIDhHOBtsn4MIAGoB+bXAEByNXUSEgAk3VssFs8kMd/3G2rH3f0hJuoZLYBJAsknkj7kxXYaSIKknwDWJGdTAVz7d/c0ML+tmJckj/O7kTy4IG0lYQhhdFd1Xd8nCZIwM6SUTlr7QwGcpEk6c/c3fVmeCxAlrSW1PYAk2244lMCDAG3Av8UY35U66ag4MTdDMMtjfXWAALRcLpcppVNJFQCRdJKQdB5jfIXmJIbKeS+A0NSCwWa0Xq+PzOxp99shAzxAYR7sakajIumSrrJ9+x1pAFalvg4CyGpbdxeguERXaOJVZyclWdyNc/sU14PKzAKAQBIppbv7GEkyM7vTHSMJdz/ps+kFcPfXub4HAF/H1gaAlNKXqqpeopNwIQSSvMDvU/yj/xcHi7iZiCV5EHrGi6vhf/3b+gUCF/lQSUWQhgAAAABJRU5ErkJggg==">
+    <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACMklEQVR4nO2XsW7UQBCG/3/WF9JEIOhOpxMVokRCoqOlpuMZeAvE25Ceh0BUVKRLA0uLFF1AufX8FF4H5+5s314sKOCXLFmrndlvd2ZnbGJb3DE2JBXO31rMNpzdymExwHw+/wwAkgggAbgYswGwIjmTVJlZkPQ+xvgWzWa8BKAi+RgAyP1P3t2vAByZGcwM7n7egStSJalLbAUgl5JmkgzAj9KFrwHQHJvQ0H+X9DGHY6dICoBJek4y5Hfrm78PAAA4ySDpU4zxxZjRfD5/BOAMhfEeAmhl+SF23wbLsMfSNJdlEwBodtUHgAygqQAOjt1U+usAmyEggIDhHOBtsn4MIAGoB+bXAEByNXUSEgAk3VssFs8kMd/3G2rH3f0hJuoZLYBJAsknkj7kxXYaSIKknwDWJGdTAVz7d/c0ML+tmJckj/O7kTy4IG0lYQhhdFd1Xd8nCZIwM6SUTlr7QwGcpEk6c/c3fVmeCxAlrSW1PYAk2244lMCDAG3Av8UY35U66ag4MTdDMMtjfXWAALRcLpcppVNJFQCRdJKQdB5jfIXmJIbKeS+A0NSCwWa0Xq+PzOxp99shAzxAYR7sakajIumSrrJ9+x1pAFalvg4CyGpbdxeguERXaOJVZyclWdyNc/sU14PKzAKAQBIppbv7GEkyM7vTHSMJdz/ps+kFcPfXub4HAF/H1gaAlNKXqqpeopNwIQSSvMDvU/yj/xcHi7iZiCV5EHrGi6vhf/3b+gUCF/lQSUWQhgAAAABJRU5ErkJggg==">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0a0f1e',
+                            darker: '#060c18',
+                            accent: '#7c3aed',
+                            glow: '#2dd4bf'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0f1e;
+            color: #f4f4f5;
+            -webkit-tap-highlight-color: transparent;
+        }
+        /* overflow-x containment on wrapper, NOT body — prevents sticky breakage on iOS Safari */
+        #page-wrapper {
+            overflow-x: hidden;
+        }
+        /* Ensure minimum tap target size for buttons/links */
+        button, a {
+            min-height: 44px;
+        }
+        /* Allow buttons that are intentionally small to opt out */
+        .tap-sm {
+            min-height: unset;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #060c18;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e2a45;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2d3f66;
+        }
+        /* Aurora glow animation background */
+        .aurora-bg {
+            background: radial-gradient(circle at 50% -20%, rgba(124, 58, 237, 0.20) 0%, rgba(45, 212, 191, 0.07) 45%, rgba(10, 15, 30, 0) 70%);
+        }
+        .glow-card {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 40px rgba(124, 58, 237, 0.15);
+            border-color: rgba(45, 212, 191, 0.30);
+            transform: translateY(-2px);
+        }
+        /* Continuous marquee effect for tech stack */
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 35s linear infinite;
+        }
+        /* Mask gradient to fade marquee edges */
+        .mask-gradient {
+            mask-image: linear-gradient(to right, transparent, white 15%, white 85%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, white 15%, white 85%, transparent);
+        }
+    </style>
+</head>
+<body class="relative min-h-screen">
+    <div id="page-wrapper" class="relative min-h-screen">
+    <!-- Header spacer: matches fixed header height -->
+    <div class="h-14 sm:h-16 md:h-20" aria-hidden="true"></div>
+
+    <!-- Glowing Background Accents -->
+    <div class="absolute top-0 left-0 w-full h-[1200px] aurora-bg pointer-events-none z-0"></div>
+    <div class="absolute top-[2200px] right-0 w-[600px] h-[600px] bg-violet-600/6 rounded-full blur-[130px] pointer-events-none"></div>
+    <div class="absolute top-[4200px] left-0 w-[700px] h-[700px] bg-teal-500/5 rounded-full blur-[160px] pointer-events-none"></div>
+
+    <!-- Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 w-full border-b border-zinc-800/80 bg-[#0a0f1e]/90 backdrop-blur-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-14 sm:h-16 md:h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center group">
+                <img src="data:image/png;base64,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" alt="Palaganix Technology Consulting" class="h-7 sm:h-8 md:h-9 w-auto object-contain brightness-0 invert opacity-90 group-hover:opacity-100 transition-opacity duration-200">
+            </a>
+
+            <!-- Desktop Nav Items -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-zinc-400">
+                <a href="#services" class="hover:text-white transition-colors">Services</a>
+                <a href="#why-us" class="hover:text-white transition-colors">Why Palaganix</a>
+                <a href="#process" class="hover:text-white transition-colors">Our Process</a>
+                <a href="#projects" class="hover:text-white transition-colors">Case Studies</a>
+                <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
+                <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+            </nav>
+
+            <!-- CTA & Mobile Trigger -->
+            <div class="flex items-center space-x-4">
+                <a href="#consultation-planner" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-semibold bg-white text-zinc-950 hover:bg-zinc-200 transition-all duration-200 hover:shadow-lg hover:shadow-white/5">
+                    Start Consultation
+                </a>
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="p-2 text-zinc-400 hover:text-white focus:outline-none md:hidden" aria-label="Toggle Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menuPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div id="mobileMenu" class="hidden md:hidden absolute left-0 w-full border-b border-zinc-800 bg-[#060c18]/97 backdrop-blur-lg transition-all duration-300">
+            <div class="px-6 py-8 flex flex-col space-y-4 text-zinc-300 font-medium">
+                <a href="#services" class="mobile-link py-3 hover:text-white border-b border-slate-800/60">Services</a>
+                <a href="#why-us" class="mobile-link py-3 hover:text-white border-b border-slate-800/60">Why Palaganix</a>
+                <a href="#process" class="mobile-link py-3 hover:text-white border-b border-slate-800/60">Our Process</a>
+                <a href="#projects" class="mobile-link py-3 hover:text-white border-b border-slate-800/60">Case Studies</a>
+                <a href="#pricing" class="mobile-link py-3 hover:text-white border-b border-slate-800/60">Pricing</a>
+                <a href="#faq" class="mobile-link py-3 hover:text-white border-b border-slate-800/60">FAQ</a>
+                <a href="#consultation-planner" class="mobile-link inline-flex items-center justify-center w-full py-3 bg-gradient-to-r from-violet-600 to-teal-500 text-white rounded-lg font-semibold text-center mt-4">
+                    Get Free Audit & Plan
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN APP CONTENT -->
+    <main class="relative z-10">
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="relative pt-12 pb-16 md:pt-24 md:pb-32 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <!-- Status Tag -->
+                <div class="flex justify-center mb-6">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-900/80 border border-slate-700/60 text-xs text-zinc-400">
+                        <span class="w-2 h-2 rounded-full bg-violet-500 animate-pulse"></span>
+                        <span>Revamped v2.0 Enterprise Release</span>
+                    </div>
+                </div>
+
+                <!-- Main Heading & Copy -->
+                <div class="text-center max-w-4xl mx-auto">
+                    <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-5 leading-[1.15] bg-clip-text">
+                        Transforming Businesses Through <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-fuchsia-200 to-teal-400">
+                            Intelligent Technology
+                        </span>
+                    </h1>
+                    <p class="text-base md:text-xl text-zinc-400 font-normal leading-relaxed max-w-2xl mx-auto mb-8">
+                        Kami membantu bisnis enterprise dan UMKM Indonesia berkembang melalui solusi software modern, kecerdasan buatan (AI), dan digital transformation yang scalable serta berdampak nyata.
+                    </p>
+
+                    <!-- Hero Call to Actions -->
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-20">
+                        <a href="#consultation-planner" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-sm bg-gradient-to-r from-violet-600 to-teal-500 text-white hover:from-violet-500 hover:to-teal-400 shadow-xl shadow-violet-500/10 hover:shadow-violet-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center space-x-2">
+                            <span>Start Free Consultation</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" /></svg>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-sm bg-slate-900/60 hover:bg-slate-800/80 text-slate-300 hover:text-white border border-slate-700/50 hover:border-slate-600 transition-all flex items-center justify-center space-x-2">
+                            <span>Explore Capabilities</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Trust Statistics Ribbon -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-5xl mx-auto p-4 md:p-8 rounded-2xl bg-slate-900/30 border border-slate-700/50 backdrop-blur-md">
+                    <div class="text-center p-2 border-r border-slate-700/50 last:border-r-0">
+                        <span class="block text-2xl md:text-4xl font-extrabold text-white">50+</span>
+                        <span class="text-xs text-zinc-500 uppercase tracking-wider font-medium mt-1 block">Proyek Selesai</span>
+                    </div>
+                    <div class="text-center p-2 md:border-r border-slate-700/50">
+                        <span class="block text-2xl md:text-4xl font-extrabold text-white">30+</span>
+                        <span class="text-xs text-zinc-500 uppercase tracking-wider font-medium mt-1 block">Klien Puas</span>
+                    </div>
+                    <div class="text-center p-2 border-r border-slate-700/50 last:border-r-0">
+                        <span class="block text-2xl md:text-4xl font-extrabold text-white">5+ Thn</span>
+                        <span class="text-xs text-zinc-500 uppercase tracking-wider font-medium mt-1 block">Pengalaman</span>
+                    </div>
+                    <div class="text-center p-2">
+                        <span class="block text-2xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">100%</span>
+                        <span class="text-xs text-zinc-500 uppercase tracking-wider font-medium mt-1 block">On-Time Delivery</span>
+                    </div>
+                </div>
+
+                <!-- Strategic Enterprise Client Logos -->
+                <div class="mt-16 text-center max-w-4xl mx-auto border-t border-slate-800/60 pt-12">
+                    <p class="text-xs text-slate-500 uppercase tracking-[0.2em] font-semibold mb-6">Industri yang Telah Kami Layani</p>
+                    <div class="flex flex-wrap justify-center items-center gap-x-10 gap-y-5 opacity-50">
+                        <span class="flex items-center space-x-2 text-xs font-bold tracking-widest text-white hover:opacity-100 transition-opacity cursor-default"><span class="w-1.5 h-1.5 rounded-full bg-violet-400 shrink-0"></span><span>MANUFAKTUR &amp; LOGISTIK</span></span>
+                        <span class="flex items-center space-x-2 text-xs font-bold tracking-widest text-white hover:opacity-100 transition-opacity cursor-default"><span class="w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span><span>E-COMMERCE &amp; RETAIL</span></span>
+                        <span class="flex items-center space-x-2 text-xs font-bold tracking-widest text-white hover:opacity-100 transition-opacity cursor-default"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span><span>FINTECH &amp; PERBANKAN</span></span>
+                        <span class="flex items-center space-x-2 text-xs font-bold tracking-widest text-white hover:opacity-100 transition-opacity cursor-default"><span class="w-1.5 h-1.5 rounded-full bg-fuchsia-400 shrink-0"></span><span>PROPERTI &amp; KONSTRUKSI</span></span>
+                        <span class="flex items-center space-x-2 text-xs font-bold tracking-widest text-white hover:opacity-100 transition-opacity cursor-default"><span class="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0"></span><span>PENDIDIKAN &amp; STARTUP</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECHNOLOGY & PARTNERS STACK (Horizontal Marquee) -->
+        <section class="border-y border-slate-800/50 bg-[#060c18]/50 py-10 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 mb-4">
+                <p class="text-center text-xs text-zinc-600 uppercase tracking-[0.2em] font-bold">Teknologi Terdepan yang Kami Integrasikan</p>
+            </div>
+            <!-- Infinite Scrolling Tech Marquee -->
+            <div class="relative w-full overflow-hidden flex whitespace-nowrap mask-gradient">
+                <div class="flex space-x-12 animate-marquee shrink-0 items-center">
+                    <span class="text-lg md:text-xl font-semibold text-zinc-600 tracking-tight flex items-center space-x-2">
+                        <span class="w-2 h-2 rounded-full bg-violet-500"></span><span>React / Next.js</span>
+                    </span>
+                    <span class="text-lg md:text-xl font-semibold text-zinc-600 tracking-tight flex items-center space-x-2">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400"></span><span>Tailwind CSS</span>
+                    </span>
+                    <span class="text-lg md:text-xl font-semibold text-zinc-600 tracking-tight flex items-center space-x-2">
+                        <span class="w-2 h-2 rounded-full bg-indigo-500"></span><span>Node.js & Python</span>
+                    </span>
+                    <span class="text-lg md:text-xl font-semibold text-zinc-600 tracking-tight flex items-center space-x-2">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Supabase / Firebase</span>
+                    </span>
+                    <span class="text-lg md:text-xl font-semibold text-zinc-600 tracking-tight flex items-center space-x-2">
+                        <span class="w-2 h-2 rounded-full bg-purple-500"></span><span>OpenAI & LLM Services</span>
+                    </span>
+                    <span class="text-lg md:text-xl font-semibold text-zinc-600 tracking-tight flex items-center space-x-2">
+                        <span class="w-2 h-2 rounded-full bg-rose-500"></span><span>Docker & AWS</span>
+                    </span>
+                    <span class="text-lg md:text-xl font-semibold text-zinc-600 tracking-tight flex items-center space-x-2">
+                        <span class="w-2 h-2 rounded-full bg-yellow-400"></span><span>UI/UX Figma Systems</span>
+                    </span>
+                </div>
+                <div class="flex space-x-12 animate-marquee shrink-0 items-center">
+                    <span class="text-lg md:text-xl font-semibold text-zinc-600 tracking-tight flex items-center space-x-2">
+                        <span class="w-2 h-2 rounded-full bg-violet-500"></span><span>React / Next.js</span>
+                    </span>
+                    <span class="text-lg md:text-xl font-semibold text-zinc-600 tracking-tight flex items-center space-x-2">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400"></span><span>Tailwind CSS</span>
+                    </span>
+                    <span class="text-lg md:text-xl font-semibold text-zinc-600 tracking-tight flex items-center space-x-2">
+                        <span class="w-2 h-2 rounded-full bg-indigo-500"></span><span>Node.js & Python</span>
+                    </span>
+                    <span class="text-lg md:text-xl font-semibold text-zinc-600 tracking-tight flex items-center space-x-2">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500"></span><span>Supabase / Firebase</span>
+                    </span>
+                    <span class="text-lg md:text-xl font-semibold text-zinc-600 tracking-tight flex items-center space-x-2">
+                        <span class="w-2 h-2 rounded-full bg-purple-500"></span><span>OpenAI & LLM Services</span>
+                    </span>
+                    <span class="text-lg md:text-xl font-semibold text-zinc-600 tracking-tight flex items-center space-x-2">
+                        <span class="w-2 h-2 rounded-full bg-rose-500"></span><span>Docker & AWS</span>
+                    </span>
+                    <span class="text-lg md:text-xl font-semibold text-zinc-600 tracking-tight flex items-center space-x-2">
+                        <span class="w-2 h-2 rounded-full bg-yellow-400"></span><span>UI/UX Figma Systems</span>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CORE CAPABILITIES (SERVICES) SECTION -->
+        <section id="services" class="py-24 md:py-32 relative">
+            <div class="max-w-7xl mx-auto px-6">
+                <!-- Header of Section -->
+                <div class="max-w-3xl mb-20">
+                    <span class="text-sm font-bold text-violet-400 uppercase tracking-[0.2em] block mb-3">Enterprise Ecosystem</span>
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-5">
+                        Layanan Transformasi Digital Kelas Dunia
+                    </h2>
+                    <p class="text-lg text-zinc-400">
+                        Kami mengintegrasikan metodologi pengembangan software termutakhir untuk merancang solusi yang andal, aman, dan dirancang khusus untuk pertumbuhan bisnis jangka panjang Anda.
+                    </p>
+                </div>
+
+                <!-- Services Grid (6 Core Offerings) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Card 1: Software Development -->
+                    <div class="glow-card p-6 md:p-8 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 backdrop-blur-sm transition-all duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 bg-violet-600/10 rounded-xl flex items-center justify-center text-violet-400 border border-violet-500/10 mb-6 group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-violet-400 transition-colors">Software Development</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                                Solusi perangkat lunak custom dari nol. Backend modern, database terstruktur, dan arsitektur premium dengan fokus utama pada scalability serta performa bisnis.
+                            </p>
+                        </div>
+                        <ul class="space-y-2 border-t border-zinc-800/80 pt-4">
+                            <li class="flex items-center text-xs text-zinc-500"><span class="w-1.5 h-1.5 rounded-full bg-violet-500 mr-2"></span>Custom Enterprise Systems</li>
+                            <li class="flex items-center text-xs text-zinc-500"><span class="w-1.5 h-1.5 rounded-full bg-violet-500 mr-2"></span>SaaS Platform Development</li>
+                            <li class="flex items-center text-xs text-zinc-500"><span class="w-1.5 h-1.5 rounded-full bg-violet-500 mr-2"></span>Robust Database & Architecture</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 2: Website & Landing Page -->
+                    <div class="glow-card p-6 md:p-8 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 backdrop-blur-sm transition-all duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 bg-cyan-600/10 rounded-xl flex items-center justify-center text-cyan-400 border border-cyan-500/10 mb-6 group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Website & Landing Page</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                                Membangun representasi premium bisnis Anda di dunia digital. Mengoptimalkan conversion rate, mengutamakan estetika modern minimalis, dan menjamin loading super cepat.
+                            </p>
+                        </div>
+                        <ul class="space-y-2 border-t border-zinc-800/80 pt-4">
+                            <li class="flex items-center text-xs text-zinc-500"><span class="w-1.5 h-1.5 rounded-full bg-cyan-500 mr-2"></span>Conversion-Optimized Layouts</li>
+                            <li class="flex items-center text-xs text-zinc-500"><span class="w-1.5 h-1.5 rounded-full bg-cyan-500 mr-2"></span>Premium Corporate Profile Pages</li>
+                            <li class="flex items-center text-xs text-zinc-500"><span class="w-1.5 h-1.5 rounded-full bg-cyan-500 mr-2"></span>E-Commerce Solutions & CMS</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 3: Mobile App Development -->
+                    <div class="glow-card p-6 md:p-8 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 backdrop-blur-sm transition-all duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 bg-indigo-600/10 rounded-xl flex items-center justify-center text-indigo-400 border border-indigo-500/10 mb-6 group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Mobile App Development</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                                Menghadirkan aplikasi seluler responsif dan berkinerja tinggi. Kami memadukan pengembangan cross-platform modern untuk Android dan iOS dengan UX yang intuitif.
+                            </p>
+                        </div>
+                        <ul class="space-y-2 border-t border-zinc-800/80 pt-4">
+                            <li class="flex items-center text-xs text-zinc-500"><span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mr-2"></span>iOS & Android Native Performance</li>
+                            <li class="flex items-center text-xs text-zinc-500"><span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mr-2"></span>Cross-Platform Integration (Flutter/React Native)</li>
+                            <li class="flex items-center text-xs text-zinc-500"><span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mr-2"></span>Seamless Offline Functionality</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 4: UI/UX Design System -->
+                    <div class="glow-card p-6 md:p-8 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 backdrop-blur-sm transition-all duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 bg-purple-600/10 rounded-xl flex items-center justify-center text-purple-400 border border-purple-500/10 mb-6 group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">UI/UX Design</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                                Riset mendalam untuk merancang user experience kelas dunia. Mengoptimalkan alur interaksi produk digital agar memikat perhatian dan meningkatkan konversi.
+                            </p>
+                        </div>
+                        <ul class="space-y-2 border-t border-zinc-800/80 pt-4">
+                            <li class="flex items-center text-xs text-zinc-500"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mr-2"></span>In-depth User Research & Journeys</li>
+                            <li class="flex items-center text-xs text-zinc-500"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mr-2"></span>High-Fidelity Wireframes & Prototypes</li>
+                            <li class="flex items-center text-xs text-zinc-500"><span class="w-1.5 h-1.5 rounded-full bg-purple-500 mr-2"></span>Interactive Custom Design Systems</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 5: AI & Automation Integration -->
+                    <div class="glow-card p-6 md:p-8 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 backdrop-blur-sm transition-all duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 bg-emerald-600/10 rounded-xl flex items-center justify-center text-emerald-400 border border-emerald-500/10 mb-6 group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">AI Integration</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                                Memodernisasi operasional bisnis menggunakan teknologi kecerdasan buatan. Mengotomatiskan alur kerja internal, asisten pintar berbasis LLM, dan analisis prediktif.
+                            </p>
+                        </div>
+                        <ul class="space-y-2 border-t border-zinc-800/80 pt-4">
+                            <li class="flex items-center text-xs text-zinc-500"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-2"></span>Custom AI Chatbots & Customer Service</li>
+                            <li class="flex items-center text-xs text-zinc-500"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-2"></span>Workflow Automation & Integration</li>
+                            <li class="flex items-center text-xs text-zinc-500"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-2"></span>Data Analytics & Predictive Modeling</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 6: Digital Transformation Consulting -->
+                    <div class="glow-card p-6 md:p-8 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 backdrop-blur-sm transition-all duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 bg-rose-600/10 rounded-xl flex items-center justify-center text-rose-400 border border-rose-500/10 mb-6 group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-rose-400 transition-colors">Digital Transformation</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                                Strategi menyeluruh untuk beralih ke dunia modern. Membantu digitalisasi proses, peningkatan efisiensi infrastruktur legacy, serta konsultasi kesiapan teknologi modern.
+                            </p>
+                        </div>
+                        <ul class="space-y-2 border-t border-zinc-800/80 pt-4">
+                            <li class="flex items-center text-xs text-zinc-500"><span class="w-1.5 h-1.5 rounded-full bg-rose-500 mr-2"></span>Legacy Infrastructure Modernization</li>
+                            <li class="flex items-center text-xs text-zinc-500"><span class="w-1.5 h-1.5 rounded-full bg-rose-500 mr-2"></span>Business Process Digitization</li>
+                            <li class="flex items-center text-xs text-zinc-500"><span class="w-1.5 h-1.5 rounded-full bg-rose-500 mr-2"></span>Enterprise Technology Consulting</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY US & ABOUT SECTION -->
+        <section id="why-us" class="py-14 md:py-14 md:py-24 bg-[#060c18]/50 border-y border-slate-800/60 relative">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                    <!-- Text and Philosophy -->
+                    <div>
+                        <span class="text-sm font-bold text-violet-400 uppercase tracking-[0.2em] block mb-3">Brand Philosophy</span>
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-5">
+                            Mitra Strategis Pertumbuhan Masa Depan Digital Anda
+                        </h2>
+                        <p class="text-zinc-400 mb-6 leading-relaxed">
+                            Palaganix didirikan untuk mengatasi kesenjangan antara teknologi kelas enterprise dengan kebutuhan praktis bisnis di Indonesia. Kami tidak menganggap diri kami sebagai vendor lepas, melainkan sebagai partner transformasi digital jangka panjang.
+                        </p>
+                        <p class="text-zinc-400 mb-8 leading-relaxed">
+                            Setiap sistem, situs web, atau sistem otomatisasi kecerdasan buatan yang kami bangun dirancang dengan perhatian mendalam terhadap performa kecepatan (SEO) tinggi, keamanan optimal, serta kemudahan modifikasi di masa depan.
+                        </p>
+
+                        <!-- Highlights Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 mt-1 flex items-center justify-center text-emerald-400">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">Enterprise Standards</h4>
+                                    <p class="text-xs text-zinc-500 mt-1">Menggunakan standar arsitektur aman setara skala internasional.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 mt-1 flex items-center justify-center text-emerald-400">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">Clear ROI & Goals</h4>
+                                    <p class="text-xs text-zinc-500 mt-1">Fokus pada pertumbuhan conversion rate dan efisiensi tim.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 mt-1 flex items-center justify-center text-emerald-400">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">Agile Methodology</h4>
+                                    <p class="text-xs text-zinc-500 mt-1">Kolaborasi transparan dan update progres berkala di setiap tahap.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 mt-1 flex items-center justify-center text-emerald-400">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">End-to-End Support</h4>
+                                    <p class="text-xs text-zinc-500 mt-1">Dari perancangan awal hingga dukungan teknis pasca-peluncuran.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Layered Image & Commitment Card (Stripe/Vercel Showcase style) -->
+                    <div class="relative w-full aspect-[3/2] sm:aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-slate-700/40 group">
+                        <!-- Premium Team Photo -->
+                        <img 
+                            src="https://res.cloudinary.com/dq8e4qeew/image/upload/v1779271168/img003_bersama-team_b14p4a.png" 
+                            alt="Palaganix Team Collaborating" 
+                            class="w-full h-full object-cover opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700"
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80';"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0a0f1e]/90 via-[#0a0f1e]/20 to-transparent pointer-events-none"></div>
+
+                        <!-- Layered Float Box inside the image container -->
+                        <div class="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6 p-3 md:p-5 rounded-xl bg-[#0a0f1e]/90 border border-violet-500/20 backdrop-blur-md shadow-2xl transition-transform duration-300 transform group-hover:translate-y-[-4px]">
+                            <span class="text-[10px] text-violet-400 font-extrabold block uppercase tracking-wider mb-1">Our Commitment</span>
+                            <h4 class="text-sm md:text-base font-bold text-white mb-1 md:mb-2">Lighthouse Speed Optimization 95+</h4>
+                            <p class="text-xs text-zinc-400 leading-relaxed hidden sm:block">
+                                Kami merancang arsitektur kode modern untuk menjamin kecepatan pemuatan tinggi tanpa hambatan performa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS SECTION (INTERACTIVE TIMELINE) -->
+        <section id="process" class="py-24 md:py-32 relative">
+            <div class="max-w-7xl mx-auto px-6">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-20">
+                    <span class="text-sm font-bold text-violet-400 uppercase tracking-[0.2em] block mb-3">Structured Workflow</span>
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-5">
+                        Bagaimana Kami Mewujudkannya
+                    </h2>
+                    <p class="text-lg text-zinc-400">
+                        Kami merancang alur kerja yang sangat transparan dan efisien untuk meminimalkan miskomunikasi dan mempercepat waktu rilis pasar.
+                    </p>
+                </div>
+
+                <!-- Interactive Steps Selection -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                    <!-- Step Btn 1 -->
+                    <button id="step-btn-1" onclick="switchStep(1)" class="step-btn p-4 rounded-xl border border-violet-500/30 bg-slate-900/60 text-left transition-all duration-300">
+                        <span class="text-xs text-violet-400 font-bold block mb-1">TAHAP 01</span>
+                        <span class="font-bold text-white text-sm sm:text-base">Discovery & Audit</span>
+                    </button>
+                    <!-- Step Btn 2 -->
+                    <button id="step-btn-2" onclick="switchStep(2)" class="step-btn p-4 rounded-xl border border-slate-700 bg-slate-900/40 text-left transition-all duration-300">
+                        <span class="text-xs text-zinc-500 font-bold block mb-1">TAHAP 02</span>
+                        <span class="font-bold text-zinc-300 text-sm sm:text-base">Planning & Design</span>
+                    </button>
+                    <!-- Step Btn 3 -->
+                    <button id="step-btn-3" onclick="switchStep(3)" class="step-btn p-4 rounded-xl border border-slate-700 bg-slate-900/40 text-left transition-all duration-300">
+                        <span class="text-xs text-zinc-500 font-bold block mb-1">TAHAP 03</span>
+                        <span class="font-bold text-zinc-300 text-sm sm:text-base">Agile Development</span>
+                    </button>
+                    <!-- Step Btn 4 -->
+                    <button id="step-btn-4" onclick="switchStep(4)" class="step-btn p-4 rounded-xl border border-slate-700 bg-slate-900/40 text-left transition-all duration-300">
+                        <span class="text-xs text-zinc-500 font-bold block mb-1">TAHAP 04</span>
+                        <span class="font-bold text-zinc-300 text-sm sm:text-base">Uji & Launching</span>
+                    </button>
+                </div>
+
+                <!-- Step Descriptions Display Block -->
+                <div class="p-5 md:p-8 lg:p-12 rounded-2xl bg-zinc-900/30 border border-zinc-800/80 backdrop-blur-md relative overflow-hidden">
+                    
+                    <!-- Glow Inside -->
+                    <div class="absolute -right-32 -bottom-32 w-96 h-96 bg-violet-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+                    <!-- Content Panel 1 -->
+                    <div id="step-content-1" class="step-content transition-all duration-300">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <h3 class="text-xl md:text-3xl font-extrabold text-white mb-3">Discovery & Konsultasi Mendalam</h3>
+                                <p class="text-zinc-400 leading-relaxed mb-6">
+                                    Langkah pertama yang paling krusial. Kami melakukan audit mendalam terhadap sistem, situs web, atau alur kerja Anda yang masih berjalan manual. Kami mengidentifikasi masalah utama dan merancang strategi transformasi digital terbaik.
+                                </p>
+                                <div class="space-y-3">
+                                    <div class="flex items-center space-x-3 text-sm text-zinc-300">
+                                        <svg class="w-4 h-4 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                        <span>Audit mendalam infrastruktur sistem digital existing.</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3 text-sm text-zinc-300">
+                                        <svg class="w-4 h-4 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                        <span>Penyusunan Executive Summary Solusi secara gratis.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mockup visual container -->
+                            <div class="h-64 rounded-xl bg-[#060c18]/80 border border-slate-700/50 flex flex-col justify-center items-center p-8 text-center">
+                                <span class="text-xs text-teal-400 font-semibold tracking-wider uppercase mb-3">Expected Deliverables</span>
+                                <h4 class="text-lg font-bold text-white mb-1">Analisis Masalah & Peluang Digital</h4>
+                                <p class="text-xs text-zinc-500 max-w-xs">Output berupa dokumen blueprint rekomendasi teknologi & estimasi anggaran terarah.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Panel 2 (Hidden by Default) -->
+                    <div id="step-content-2" class="step-content hidden transition-all duration-300">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <h3 class="text-xl md:text-3xl font-extrabold text-white mb-3">Perencanaan & Desain UI/UX Premium</h3>
+                                <p class="text-zinc-400 leading-relaxed mb-6">
+                                    Kami menyusun wireframe interaktif, arsitektur database, dan visual desain dengan standar estetika minimalis modern (Apple/Vercel style) untuk disetujui bersama sebelum melangkah ke penulisan kode.
+                                </p>
+                                <div class="space-y-3">
+                                    <div class="flex items-center space-x-3 text-sm text-zinc-300">
+                                        <svg class="w-4 h-4 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                        <span>Pembuatan UI/UX Mockup Interaktif di Figma.</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3 text-sm text-zinc-300">
+                                        <svg class="w-4 h-4 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                        <span>Perancangan Database Schema & API Documentation.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mockup visual container -->
+                            <div class="h-64 rounded-xl bg-[#060c18]/80 border border-slate-700/50 flex flex-col justify-center items-center p-8 text-center">
+                                <span class="text-xs text-teal-400 font-semibold tracking-wider uppercase mb-3">Expected Deliverables</span>
+                                <h4 class="text-lg font-bold text-white mb-1">Figma Prototype & System Map</h4>
+                                <p class="text-xs text-zinc-500 max-w-xs">Output berupa visual interaktif dan alur logika sistem terstruktur rapi.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Panel 3 (Hidden by Default) -->
+                    <div id="step-content-3" class="step-content hidden transition-all duration-300">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <h3 class="text-xl md:text-3xl font-extrabold text-white mb-3">Agile Development & Integrasi Kode</h3>
+                                <p class="text-zinc-400 leading-relaxed mb-6">
+                                    Proses penulisan kode premium dimulai. Kami menggunakan framework teknologi termutakhir untuk performa dan keamanan tinggi, serta memberikan progress report secara berkala.
+                                </p>
+                                <div class="space-y-3">
+                                    <div class="flex items-center space-x-3 text-sm text-zinc-300">
+                                        <svg class="w-4 h-4 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                        <span>Pengembangan kode berbasis Next.js, React, atau Node.</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3 text-sm text-zinc-300">
+                                        <svg class="w-4 h-4 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                        <span>Integrasi API, sistem pembayaran, atau model AI.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mockup visual container -->
+                            <div class="h-64 rounded-xl bg-[#060c18]/80 border border-slate-700/50 flex flex-col justify-center items-center p-8 text-center">
+                                <span class="text-xs text-teal-400 font-semibold tracking-wider uppercase mb-3">Expected Deliverables</span>
+                                <h4 class="text-lg font-bold text-white mb-1">Production-Ready Sandbox Website</h4>
+                                <p class="text-xs text-zinc-500 max-w-xs">Akses uji coba langsung (staging link) untuk menguji fitur sebelum dirilis publik.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Panel 4 (Hidden by Default) -->
+                    <div id="step-content-4" class="step-content hidden transition-all duration-300">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <h3 class="text-xl md:text-3xl font-extrabold text-white mb-3">Pengujian Mutu & Peluncuran Publik</h3>
+                                <p class="text-zinc-400 leading-relaxed mb-6">
+                                    Kami menguji fungsionalitas di perangkat seluler secara responsif, dan memastikan semua berjalan sempurna sebelum peluncuran resmi.
+                                </p>
+                                <div class="space-y-3">
+                                    <div class="flex items-center space-x-3 text-sm text-zinc-300">
+                                        <svg class="w-4 h-4 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                        <span>Pengujian fungsionalitas lintas browser & perangkat.</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3 text-sm text-zinc-300">
+                                        <svg class="w-4 h-4 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                        <span>Penyebaran sistem di cloud server optimal (AWS, Vercel).</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mockup visual container -->
+                            <div class="h-64 rounded-xl bg-[#060c18]/80 border border-slate-700/50 flex flex-col justify-center items-center p-8 text-center">
+                                <span class="text-xs text-teal-400 font-semibold tracking-wider uppercase mb-3">Expected Deliverables</span>
+                                <h4 class="text-lg font-bold text-white mb-1">Live Website & Source Code Handover</h4>
+                                <p class="text-xs text-zinc-500 max-w-xs">Penyerahan seluruh akses hosting, source code bersih, serta tutorial manajemen lengkap.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CASE STUDIES (BENTO GRID SHAPE) -->
+        <section id="projects" class="py-14 md:py-24 bg-[#060c18]/40 border-t border-slate-800/60 relative">
+            <div class="max-w-7xl mx-auto px-6">
+                <!-- Header -->
+                <div class="max-w-3xl mb-16">
+                    <span class="text-sm font-bold text-violet-400 uppercase tracking-[0.2em] block mb-3">Success Stories</span>
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-5">
+                        Studi Kasus & Hasil Nyata
+                    </h2>
+                    <p class="text-lg text-zinc-400">
+                        Lihat bagaimana kami mendesain ulang sistem digital untuk meningkatkan conversion rate, menyederhanakan birokrasi, dan menghemat biaya operasional secara signifikan.
+                    </p>
+                </div>
+
+                <!-- Bento Grid Layout -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <!-- Box 1 (Span 2) -->
+                    <div class="md:col-span-2 group relative p-[1px] bg-gradient-to-b from-slate-700/40 to-slate-800/30 rounded-2xl overflow-hidden hover:scale-[1.01] transition-all duration-300">
+                        <div class="p-5 md:p-8 bg-[#0d1428] rounded-[15px] h-full flex flex-col justify-between">
+                            <div>
+                                <span class="px-3 py-1 rounded-full bg-violet-500/10 text-violet-400 border border-violet-500/20 text-xs font-semibold uppercase tracking-wider mb-4 inline-block">AI INTEGRATION</span>
+                                <h3 class="text-2xl font-extrabold text-white mb-3">AuraCare AI Support Ecosystem</h3>
+                                <p class="text-zinc-400 text-sm max-w-xl mb-6">
+                                    Mengintegrasikan asisten kecerdasan buatan terlatih yang mampu memproses 85% keluhan pelanggan secara real-time, meningkatkan efisiensi operasional customer service hingga 40%.
+                                </p>
+                            </div>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-slate-800/60 pt-6 mt-6">
+                                <div>
+                                    <span class="block text-2xl font-extrabold text-emerald-400">40%</span>
+                                    <span class="text-xs text-zinc-500">Efisiensi CS</span>
+                                </div>
+                                <div>
+                                    <span class="block text-2xl font-extrabold text-white">85%</span>
+                                    <span class="text-xs text-zinc-500">Auto Response</span>
+                                </div>
+                                <div>
+                                    <span class="block text-2xl font-extrabold text-white">AWS & Python</span>
+                                    <span class="text-xs text-zinc-500">Tech Stack</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Box 2 (Span 1) -->
+                    <div class="group relative p-[1px] bg-gradient-to-b from-slate-700/40 to-slate-800/30 rounded-2xl overflow-hidden hover:scale-[1.01] transition-all duration-300">
+                        <div class="p-5 md:p-8 bg-[#0d1428] rounded-[15px] h-full flex flex-col justify-between">
+                            <div>
+                                <span class="px-3 py-1 rounded-full bg-teal-500/10 text-teal-400 border border-teal-500/20 text-xs font-semibold uppercase tracking-wider mb-4 inline-block">WEB APP</span>
+                                <h3 class="text-2xl font-extrabold text-white mb-3">E-Commerce SaaS</h3>
+                                <p class="text-zinc-400 text-sm mb-6">
+                                    Platform toko digital multi-cabang dengan performa visual super cepat, mengutamakan conversion rate tinggi dan kemudahan Checkout kilat.
+                                </p>
+                            </div>
+                            <div class="border-t border-slate-800/60 pt-6 mt-6">
+                                <span class="block text-2xl font-extrabold text-emerald-400">+150%</span>
+                                <span class="text-xs text-zinc-500">Kenaikan Conversion Rate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Box 3 (Span 1) -->
+                    <div class="group relative p-[1px] bg-gradient-to-b from-slate-700/40 to-slate-800/30 rounded-2xl overflow-hidden hover:scale-[1.01] transition-all duration-300">
+                        <div class="p-5 md:p-8 bg-[#0d1428] rounded-[15px] h-full flex flex-col justify-between">
+                            <div>
+                                <span class="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20 text-xs font-semibold uppercase tracking-wider mb-4 inline-block">PORTAL DESAIN</span>
+                                <h3 class="text-2xl font-extrabold text-white mb-3">Premium Landing Revamp</h3>
+                                <p class="text-zinc-400 text-sm mb-6">
+                                    Redesain menyeluruh web profil perusahaan kelas nasional dengan standar estetika ultra minimalis kelas atas.
+                                </p>
+                            </div>
+                            <div class="border-t border-slate-800/60 pt-6 mt-6">
+                                <span class="block text-2xl font-extrabold text-emerald-400">98%</span>
+                                <span class="text-xs text-zinc-500">Skor Lighthouse Speed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Box 4 (Span 2) -->
+                    <div class="md:col-span-2 group relative p-[1px] bg-gradient-to-b from-slate-700/40 to-slate-800/30 rounded-2xl overflow-hidden hover:scale-[1.01] transition-all duration-300">
+                        <div class="p-5 md:p-8 bg-[#0d1428] rounded-[15px] h-full flex flex-col justify-between">
+                            <div>
+                                <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-semibold uppercase tracking-wider mb-4 inline-block">ENTERPRISE ERP</span>
+                                <h3 class="text-2xl font-extrabold text-white mb-3">Internal Resource Manager</h3>
+                                <p class="text-zinc-400 text-sm max-w-xl mb-6">
+                                    Penyusunan software manajemen internal khusus perusahaan manufaktur. Menghubungkan pelacakan stok real-time lintas gudang dengan analisis visual yang komprehensif.
+                                </p>
+                            </div>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-slate-800/60 pt-6 mt-6">
+                                <div>
+                                    <span class="block text-2xl font-extrabold text-emerald-400">99.9%</span>
+                                    <span class="text-xs text-zinc-500">System Uptime</span>
+                                </div>
+                                <div>
+                                    <span class="block text-2xl font-extrabold text-white">6 Gudang</span>
+                                    <span class="text-xs text-zinc-500">Terintegrasi</span>
+                                </div>
+                                <div>
+                                    <span class="block text-2xl font-extrabold text-white">Next.js & SQL</span>
+                                    <span class="text-xs text-zinc-500">Teknologi</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW INNOVATIVE CONVERSION TOOL: PROJECT BUDGET & ROI ESTIMATOR -->
+        <section id="consultation-planner" class="py-16 md:py-24 lg:py-32 relative bg-[#060c18]/60 border-t border-slate-800/60">
+            <div class="max-w-4xl mx-auto px-6">
+                <!-- Header -->
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-sm font-bold text-teal-400 uppercase tracking-[0.2em] block mb-3">Interactive Scope Planner</span>
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-5">
+                        Rancang Rencana Digital Anda
+                    </h2>
+                    <p class="text-zinc-400">
+                        Pilih jenis layanan yang Anda butuhkan secara interaktif. Kalkulator cerdas kami akan merekomendasikan estimasi biaya transparan dan membuat proposal WhatsApp instan.
+                    </p>
+                </div>
+
+                <!-- Scope Calculator Block -->
+                <div class="p-5 md:p-8 lg:p-12 rounded-2xl bg-slate-900/40 border border-slate-700/60 backdrop-blur-md">
+                    <!-- Step 1: Services Selection -->
+                    <div class="mb-10">
+                        <label class="block text-sm font-bold text-white mb-4 uppercase tracking-wider">1. Pilih Layanan yang Anda Butuhkan</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <!-- Option 1 -->
+                            <label class="flex items-center justify-between p-4 rounded-xl bg-[#060c18] border border-slate-700/60 cursor-pointer hover:border-violet-500 transition-colors">
+                                <div class="flex items-center space-x-3">
+                                    <input type="checkbox" id="srv-web" value="2300000" class="w-4 h-4 text-violet-500 bg-slate-900 border-slate-700 rounded focus:ring-violet-500" onchange="calculateEstimate()">
+                                    <span class="text-sm font-medium text-zinc-300">Website & Landing Page</span>
+                                </div>
+                                <span class="text-xs text-zinc-500">Mulai Rp 2.3 Juta</span>
+                            </label>
+                            <!-- Option 2 -->
+                            <label class="flex items-center justify-between p-4 rounded-xl bg-[#060c18] border border-slate-700/60 cursor-pointer hover:border-violet-500 transition-colors">
+                                <div class="flex items-center space-x-3">
+                                    <input type="checkbox" id="srv-soft" value="5000000" class="w-4 h-4 text-violet-500 bg-slate-900 border-slate-700 rounded focus:ring-violet-500" onchange="calculateEstimate()">
+                                    <span class="text-sm font-medium text-zinc-300">Custom Software Dev</span>
+                                </div>
+                                <span class="text-xs text-zinc-500">Mulai Rp 5 Juta</span>
+                            </label>
+                            <!-- Option 3 -->
+                            <label class="flex items-center justify-between p-4 rounded-xl bg-[#060c18] border border-slate-700/60 cursor-pointer hover:border-violet-500 transition-colors">
+                                <div class="flex items-center space-x-3">
+                                    <input type="checkbox" id="srv-ai" value="8000000" class="w-4 h-4 text-violet-500 bg-slate-900 border-slate-700 rounded focus:ring-violet-500" onchange="calculateEstimate()">
+                                    <span class="text-sm font-medium text-zinc-300">AI & Chatbot Integration</span>
+                                </div>
+                                <span class="text-xs text-zinc-500">Mulai Rp 8 Juta</span>
+                            </label>
+                            <!-- Option 4 -->
+                            <label class="flex items-center justify-between p-4 rounded-xl bg-[#060c18] border border-slate-700/60 cursor-pointer hover:border-violet-500 transition-colors">
+                                <div class="flex items-center space-x-3">
+                                    <input type="checkbox" id="srv-design" value="2000000" class="w-4 h-4 text-violet-500 bg-slate-900 border-slate-700 rounded focus:ring-violet-500" onchange="calculateEstimate()">
+                                    <span class="text-sm font-medium text-zinc-300">Premium UI/UX Figma Design</span>
+                                </div>
+                                <span class="text-xs text-zinc-500">Mulai Rp 2 Juta</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Scale of Enterprise -->
+                    <div class="mb-10">
+                        <label class="block text-sm font-bold text-white mb-4 uppercase tracking-wider">2. Skala Proyek & Dukungan Keamanan</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <button id="scale-starter" onclick="selectScale('starter')" class="scale-btn py-4 sm:py-3 px-4 rounded-xl border border-violet-500 bg-violet-500/10 text-white font-medium text-xs transition-colors">
+                                STARTER / UMKM
+                            </button>
+                            <button id="scale-business" onclick="selectScale('business')" class="scale-btn py-4 sm:py-3 px-4 rounded-xl border border-slate-700 bg-[#060c18] text-slate-400 font-medium text-xs transition-colors">
+                                BUSINESS / STARTUP
+                            </button>
+                            <button id="scale-enterprise" onclick="selectScale('enterprise')" class="scale-btn py-4 sm:py-3 px-4 rounded-xl border border-slate-700 bg-[#060c18] text-slate-400 font-medium text-xs transition-colors">
+                                ENTERPRISE / MULTI
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Output Panel -->
+                    <div class="p-6 rounded-xl bg-[#060c18] border border-slate-700/50 flex flex-col md:flex-row items-center justify-between gap-6">
+                        <div>
+                            <span class="text-xs text-zinc-500 uppercase font-bold tracking-wider block">Estimasi Investasi Digital</span>
+                            <span id="calculated-cost" class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-teal-400 hidden">Rp 2.300.000</span>
+                            <span id="cost-placeholder" class="text-base font-medium text-slate-500 italic">Pilih layanan di atas untuk melihat estimasi biaya ↑</span>
+                            <span class="text-xs text-zinc-400 block mt-1">*Sangat flexibel, termasuk dukungan pasca-peluncuran 30 hari.</span>
+                        </div>
+                        <button onclick="sendWhatsappEstimator()" class="w-full md:w-auto px-6 py-4 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-500 hover:to-teal-400 text-white font-bold text-sm tracking-wide shadow-lg shadow-emerald-500/10 flex items-center justify-center space-x-2">
+                            <!-- WhatsApp Icon SVG -->
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6c-3.314 0-6 2.686-6 6 0 1.148.322 2.22.883 3.129l-.93 3.396 3.477-.912A5.967 5.967 0 0 0 12.031 18c3.314 0 6-2.686 6-6s-2.686-6-6-6zm0 10.8c-1.026 0-1.996-.282-2.834-.772l-.203-.122-2.1.55.56-2.046-.134-.214a4.773 4.773 0 0 1-.729-2.596c0-2.647 2.153-4.8 4.8-4.8s4.8 2.153 4.8 4.8-2.153 4.8-4.8 4.8z"/></svg>
+                            <span>Dapatkan Penawaran Formal via WA</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING SECTION -->
+        <section id="pricing" class="py-16 md:py-24 lg:py-32 relative bg-[#060c18]/30 border-t border-slate-800/60">
+            <div class="max-w-7xl mx-auto px-6">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-20">
+                    <span class="text-sm font-bold text-violet-400 uppercase tracking-[0.2em] block mb-3">Enterprise-Grade Tiers</span>
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-5">
+                        Paket Penawaran Transparan
+                    </h2>
+                    <p class="text-lg text-zinc-400">
+                        Kami menawarkan skema harga modular yang dirancang untuk mendukung bisnis dari berbagai tahapan pertumbuhan. Tanpa biaya tersembunyi.
+                    </p>
+                </div>
+
+                <!-- Pricing Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Starter Package -->
+                    <div class="p-8 rounded-2xl bg-slate-900/30 border border-slate-700/60 hover:border-slate-600 backdrop-blur-sm transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs text-zinc-500 uppercase font-bold tracking-wider block mb-2">STARTER</span>
+                            <h3 class="text-xl font-bold text-white mb-4">Branding & Presence</h3>
+                            <div class="mb-6">
+                                <span class="text-3xl font-extrabold text-white">Rp 2.3 Juta</span>
+                                <span class="text-zinc-500 text-xs block mt-1">Satu Kali Bayar</span>
+                            </div>
+                            <p class="text-zinc-400 text-xs mb-6 leading-relaxed">
+                                Ideal untuk UMKM atau profesional yang ingin mendirikan kehadiran digital modern secepat mungkin dengan tingkat konversi tinggi.
+                            </p>
+                            <ul class="space-y-3 mb-8 border-t border-slate-800/60 pt-6">
+                                <li class="flex items-center text-xs text-zinc-400">
+                                    <svg class="w-4 h-4 text-emerald-400 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                    1 Premium Conversion Landing Page
+                                </li>
+                                <li class="flex items-center text-xs text-zinc-400">
+                                    <svg class="w-4 h-4 text-emerald-400 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                    Lighthouse Speed Optimization 90+
+                                </li>
+                                <li class="flex items-center text-xs text-zinc-400">
+                                    <svg class="w-4 h-4 text-emerald-400 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                    WhatsApp Integration & Form Lead
+                                </li>
+                                <li class="flex items-center text-xs text-zinc-500 line-through">
+                                    Custom AI Assistant Integration
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/6285762565278?text=Halo%20Palaganix%2C%20saya%20tertarik%20dengan%20Paket%20Starter%20Rp%202.3%20Juta." class="block w-full text-center py-3 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-white font-semibold text-xs transition-colors border border-slate-700">
+                            Pilih Paket Starter
+                        </a>
+                    </div>
+
+                    <!-- Business Package (Highlighted) -->
+                    <div class="relative p-[1px] bg-gradient-to-tr from-violet-600 to-teal-400 rounded-2xl overflow-hidden shadow-2xl shadow-violet-500/15 hover:scale-[1.02] transition-transform duration-300 md:scale-[1.02]">
+                        <div class="p-5 md:p-8 bg-[#0d1428] rounded-[15px] h-full flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-xs text-violet-400 uppercase font-bold tracking-wider block">BUSINESS (POPULAR)</span>
+                                    <span class="px-2 py-0.5 rounded bg-violet-500/20 text-[9px] text-violet-300 border border-violet-400/20 font-bold uppercase">Rekomendasi</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-white mb-4">Scale & Growth</h3>
+                                <div class="mb-6">
+                                    <span class="text-3xl font-extrabold text-white">Rp 5 Juta</span>
+                                    <span class="text-zinc-500 text-xs block mt-1">Satu Kali Bayar</span>
+                                </div>
+                                <p class="text-zinc-400 text-xs mb-6 leading-relaxed">
+                                    Sangat direkomendasikan untuk startup digital, industri kecil menengah, atau perusahaan yang memerlukan sistem manajemen database & integrasi pihak ketiga.
+                                </p>
+                                <ul class="space-y-3 mb-8 border-t border-slate-800/60 pt-6">
+                                    <li class="flex items-center text-xs text-zinc-300 font-medium">
+                                        <svg class="w-4 h-4 text-emerald-400 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                        Multi-Page Premium Corporate Website
+                                    </li>
+                                    <li class="flex items-center text-xs text-zinc-300 font-medium">
+                                        <svg class="w-4 h-4 text-emerald-400 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                        Custom Database & API Integration
+                                    </li>
+                                    <li class="flex items-center text-xs text-zinc-300 font-medium">
+                                        <svg class="w-4 h-4 text-emerald-400 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                        Modern UI/UX Figma Design Custom
+                                    </li>
+                                    <li class="flex items-center text-xs text-zinc-300 font-medium">
+                                        <svg class="w-4 h-4 text-emerald-400 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                        Free Support & Maintenance (60 Hari)
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="https://wa.me/6285762565278?text=Halo%20Palaganix%2C%20saya%20tertarik%20dengan%20Paket%20Business%20Rp%205%20Juta." class="block w-full text-center py-3.5 rounded-xl bg-gradient-to-r from-violet-600 to-teal-500 hover:from-violet-500 hover:to-teal-400 text-white font-bold text-xs shadow-lg shadow-violet-500/20 transition-all">
+                                Pilih Paket Business
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Enterprise Package -->
+                    <div class="p-8 rounded-2xl bg-slate-900/30 border border-slate-700/60 hover:border-slate-600 backdrop-blur-sm transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs text-zinc-500 uppercase font-bold tracking-wider block mb-2">ENTERPRISE</span>
+                            <h3 class="text-xl font-bold text-white mb-4">Infinite Solutions</h3>
+                            <div class="mb-6">
+                                <span class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-teal-400">Rp 15 Juta+</span>
+                                <span class="text-zinc-500 text-xs block mt-1">Sesuai Kebutuhan Spesifik</span>
+                            </div>
+                            <p class="text-zinc-400 text-xs mb-6 leading-relaxed">
+                                Sempurna untuk kebutuhan perusahaan multi-nasional, sistem otomasi kecerdasan buatan terintegrasi, atau software internal kustom skala besar.
+                            </p>
+                            <ul class="space-y-3 mb-8 border-t border-slate-800/60 pt-6">
+                                <li class="flex items-center text-xs text-zinc-400">
+                                    <svg class="w-4 h-4 text-emerald-400 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                    Custom Core Software (No Limits)
+                                </li>
+                                <li class="flex items-center text-xs text-zinc-400">
+                                    <svg class="w-4 h-4 text-emerald-400 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                    Sistem Kecerdasan Buatan (AI) & Chatbots
+                                </li>
+                                <li class="flex items-center text-xs text-zinc-400">
+                                    <svg class="w-4 h-4 text-emerald-400 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                    Server Setup Khusus AWS/Google Cloud
+                                </li>
+                                <li class="flex items-center text-xs text-zinc-400">
+                                    <svg class="w-4 h-4 text-emerald-400 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                    SLA Dukungan 24/7 Selamanya
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/6285762565278?text=Halo%20Palaganix%2C%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20Custom%20Enterprise%20skala%20besar." class="block w-full text-center py-3 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-white font-semibold text-xs transition-colors border border-slate-700">
+                            Hubungi Account Manager
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION (Enterprise Trust Booster) -->
+        <section id="faq" class="py-24 md:py-32 relative bg-[#060c18]/50 border-t border-slate-800/60">
+            <div class="max-w-4xl mx-auto px-6">
+                <!-- Header -->
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-sm font-bold text-violet-400 uppercase tracking-[0.2em] block mb-3">Questions & Answers</span>
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-5">
+                        Pertanyaan yang Sering Diajukan
+                    </h2>
+                    <p class="text-zinc-400">
+                        Informasi lengkap mengenai alur kolaborasi, hak cipta source code, dukungan keamanan, serta penjaminan mutu dari Palaganix.
+                    </p>
+                </div>
+
+                <!-- FAQ Accordion List -->
+                <div class="space-y-4">
+                    <!-- Q1 -->
+                    <div class="border border-slate-700/50 rounded-2xl bg-slate-900/10 overflow-hidden transition-colors hover:border-violet-500/30">
+                        <button onclick="toggleFaq(1)" class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                            <span class="font-bold text-white text-base md:text-lg">Apakah saya akan mendapatkan akses penuh ke source code?</span>
+                            <span id="faq-icon-1" class="text-zinc-500 text-xl transition-transform duration-300">+</span>
+                        </button>
+                        <div id="faq-answer-1" class="hidden px-6 pb-6 text-sm text-zinc-400 leading-relaxed border-t border-slate-800/60 pt-4">
+                            Ya, tentu saja. Palaganix menerapkan kebijakan transparansi penuh. Setelah seluruh proses pengembangan selesai dan pembayaran dilunasi, seluruh kepemilikan kode sumber (source code) yang bersih dan terstruktur akan diserahkan sepenuhnya kepada Anda tanpa biaya langganan tambahan tersembunyi.
+                        </div>
+                    </div>
+
+                    <!-- Q2 -->
+                    <div class="border border-slate-700/50 rounded-2xl bg-slate-900/10 overflow-hidden transition-colors hover:border-violet-500/30">
+                        <button onclick="toggleFaq(2)" class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                            <span class="font-bold text-white text-base md:text-lg">Berapa lama estimasi waktu pengerjaan untuk satu proyek?</span>
+                            <span id="faq-icon-2" class="text-zinc-500 text-xl transition-transform duration-300">+</span>
+                        </button>
+                        <div id="faq-answer-2" class="hidden px-6 pb-6 text-sm text-zinc-400 leading-relaxed border-t border-slate-800/60 pt-4">
+                            Waktu pengerjaan sangat bergantung pada kompleksitas modul yang Anda butuhkan. Untuk Landing Page / Profil Perusahaan premium (Paket Starter) biasanya selesai dalam 5-10 hari kerja. Sedangkan untuk Custom Enterprise Software atau integrasi kecerdasan buatan (AI) kompleks membutuhkan waktu antara 4 hingga 8 minggu kerja.
+                        </div>
+                    </div>
+
+                    <!-- Q3 -->
+                    <div class="border border-slate-700/50 rounded-2xl bg-slate-900/10 overflow-hidden transition-colors hover:border-violet-500/30">
+                        <button onclick="toggleFaq(3)" class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                            <span class="font-bold text-white text-base md:text-lg">Apakah Palaganix menyediakan jaminan/SLA pasca-peluncuran?</span>
+                            <span id="faq-icon-3" class="text-zinc-500 text-xl transition-transform duration-300">+</span>
+                        </button>
+                        <div id="faq-answer-3" class="hidden px-6 pb-6 text-sm text-zinc-400 leading-relaxed border-t border-slate-800/60 pt-4">
+                            Ya. Setiap paket layanan kami sudah dilengkapi dengan garansi perbaikan bug gratis pasca-launching (30 hari untuk Paket Starter, 60 hari untuk Paket Business, dan dukungan premium berkelanjutan dengan SLA khusus untuk tingkat Enterprise). Kami memastikan operasional platform digital Anda bebas hambatan.
+                        </div>
+                    </div>
+
+                    <!-- Q4 -->
+                    <div class="border border-slate-700/50 rounded-2xl bg-slate-900/10 overflow-hidden transition-colors hover:border-violet-500/30">
+                        <button onclick="toggleFaq(4)" class="w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                            <span class="font-bold text-white text-base md:text-lg">Dapatkah sistem kami diintegrasikan dengan teknologi AI / API eksternal?</span>
+                            <span id="faq-icon-4" class="text-zinc-500 text-xl transition-transform duration-300">+</span>
+                        </button>
+                        <div id="faq-answer-4" class="hidden px-6 pb-6 text-sm text-zinc-400 leading-relaxed border-t border-slate-800/60 pt-4">
+                            Sangat bisa. Kami memiliki keahlian mendalam dalam integrasi teknologi kecerdasan buatan (seperti OpenAI GPT, custom LLMs) serta API eksternal pihak ketiga seperti sistem gerbang pembayaran (Payment Gateway), layanan logistik kurir, SMS/WhatsApp Gateway, dan dashboard ERP internal perusahaan Anda.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LEAD CAPTURE / CONTACT FORM & FOOTER -->
+        <section class="py-14 md:py-24 bg-[#060c18]/60 border-t border-slate-800/60 relative">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                    
+                    <!-- Left Copy and CTA Details -->
+                    <div>
+                        <span class="text-sm font-bold text-violet-400 uppercase tracking-[0.2em] block mb-3">Get in Touch</span>
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-5">
+                            Mari Bangun Sesuatu yang Luar Biasa Bersama
+                        </h2>
+                        <p class="text-zinc-400 mb-8 leading-relaxed">
+                            Hubungi tim teknis kami hari ini untuk konsultasi gratis selama 30 menit. Kami akan mengulas arsitektur existing Anda secara detail dan membuat proposal rencana yang siap dijalankan.
+                        </p>
+
+                        <!-- Fast Response Guarantee -->
+                        <div class="flex items-center space-x-4 p-4 rounded-xl bg-slate-900/30 border border-slate-700/50 max-w-md">
+                            <div class="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-400 shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Garansi Respon Cepat</h4>
+                                <p class="text-xs text-zinc-500 mt-1">Kami akan membalas pertanyaan Anda dalam kurun waktu kurang dari 2 jam.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modern Glass Contact Form -->
+                    <div class="p-8 rounded-2xl bg-slate-900/40 border border-slate-700/60 backdrop-blur-md">
+                        <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">Nama Lengkap / Instansi</label>
+                                <input type="text" id="name" required class="w-full px-4 py-3 bg-[#060c18] border border-slate-700/50 rounded-xl text-white text-sm focus:outline-none focus:border-violet-500 transition-colors" placeholder="Contoh: Budi Santoso (PT Inovasi)">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">Nomor WhatsApp</label>
+                                <input type="tel" id="phone" required class="w-full px-4 py-3 bg-[#060c18] border border-slate-700/50 rounded-xl text-white text-sm focus:outline-none focus:border-violet-500 transition-colors" placeholder="Contoh: 085762565278">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">Pesan & Deskripsi Kebutuhan Proyek</label>
+                                <textarea id="message" rows="4" required class="w-full px-4 py-3 bg-[#060c18] border border-slate-700/50 rounded-xl text-white text-sm focus:outline-none focus:border-violet-500 transition-colors" placeholder="Jelaskan secara singkat mengenai situs web, software kustom, atau integrasi kecerdasan buatan (AI) yang ingin Anda bangun."></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-4 bg-gradient-to-r from-violet-600 to-teal-500 hover:from-violet-500 hover:to-teal-400 text-white font-bold text-sm tracking-wide rounded-xl shadow-lg shadow-violet-500/10 transition-all flex items-center justify-center space-x-2">
+                                <span>Kirim Form & Hubungi WA</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#060c18] border-t border-slate-800/60 py-12 text-zinc-500">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+                
+                <!-- Brand Info -->
+                <div class="md:col-span-2">
+                    <div class="mb-4">
+                        <img src="data:image/png;base64,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" alt="Palaganix" class="h-8 w-auto object-contain brightness-0 invert opacity-75">
+                    </div>
+                    <p class="text-sm text-zinc-400 max-w-sm leading-relaxed mb-4">
+                        Perusahaan digital transformation premium berstandar enterprise untuk membantu akselerasi pertumbuhan bisnis modern di Indonesia.
+                    </p>
+                    <p class="text-xs text-zinc-600">© 2026 Palaganix. Seluruh Hak Cipta Dilindungi Undang-Undang.</p>
+                    <div class="flex items-center space-x-3 mt-4">
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/palaganix" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-violet-600/20 border border-slate-700/60 hover:border-violet-500/40 flex items-center justify-center text-slate-400 hover:text-violet-400 transition-all duration-200" aria-label="Instagram">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://linkedin.com/company/palaganix" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-teal-600/20 border border-slate-700/60 hover:border-teal-500/40 flex items-center justify-center text-slate-400 hover:text-teal-400 transition-all duration-200" aria-label="LinkedIn">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/6285762565278" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-emerald-600/20 border border-slate-700/60 hover:border-emerald-500/40 flex items-center justify-center text-slate-400 hover:text-emerald-400 transition-all duration-200" aria-label="WhatsApp">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.488 1.45 5.41 1.451 5.58 0 10.125-4.547 10.128-10.13.001-2.705-1.05-5.248-2.959-7.16C17.315 1.397 14.773.344 12.075.344c-5.584 0-10.13 4.547-10.134 10.131-.001 1.893.493 3.743 1.432 5.348L2.44 21.102l5.33-1.398c1.554.847 3.3.1 3.3.1zm11.567-5.697c-.316-.158-1.872-.925-2.16-1.03-.289-.104-.499-.158-.709.158-.21.317-.814 1.03-1.025 1.266-.21.237-.421.263-.737.105-.315-.158-1.332-.49-2.537-1.565-.938-.836-1.57-1.87-1.754-2.185-.185-.315-.02-.485.138-.642.142-.142.316-.368.474-.552.158-.184.21-.315.316-.526.105-.21.053-.395-.026-.553-.08-.158-.71-1.71-.973-2.34-.256-.617-.517-.533-.71-.543-.183-.009-.393-.011-.604-.011-.21 0-.552.08-.84.395-.29.317-1.104 1.08-1.104 2.633 0 1.553 1.13 3.054 1.288 3.264.158.21 2.224 3.397 5.39 4.764.753.325 1.34.52 1.799.665.757.24 1.446.207 1.99.126.608-.09 1.873-.764 2.136-1.464.263-.7.263-1.3.184-1.42-.08-.12-.29-.196-.605-.354z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Layanan Utama</h4>
+                    <ul class="space-y-2 text-xs text-zinc-400">
+                        <li><a href="#services" class="hover:text-white transition-colors">Software Development</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Website & Landing Page</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Mobile App Development</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">UI/UX Figma Design</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">AI & Automation System</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Hubungi Kami</h4>
+                    <ul class="space-y-2 text-xs text-zinc-400">
+                        <li class="flex items-center font-medium">
+                            <span class="mr-2">WA: +62 857-6256-5278</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span>Email: hello@palaganix.my.id</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span>Website: https://palaganix.my.id</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span>Lokasi: Jakarta & Palembang, Indonesia</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div class="border-t border-slate-800/50 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs">
+                <p>Designed for premium-level conversion optimization & branding.</p>
+                <div class="flex space-x-6 mt-4 sm:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Syarat & Ketentuan</a>
+                    <a href="#" class="hover:text-white transition-colors">Kebijakan Privasi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY CONVERSION OPTIMIZED WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/6285762565278?text=Halo%20Palaganix%20Team%2C%20saya%20tertarik%20dengan%20layanan%20transformasi%20digital%20dan%20ingin%20berkonsultasi%20lebih%20lanjut." class="fixed bottom-6 right-6 z-50 group flex items-center justify-end" aria-label="WhatsApp Us">
+        <span class="mr-3 px-3 py-1.5 rounded-full bg-[#0a0f1e] border border-slate-700/60 text-xs font-semibold text-white shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-2 group-hover:translate-x-0 whitespace-nowrap">Chat dengan Kami</span>
+        <span class="w-14 h-14 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white shadow-2xl transition-all duration-300 group-hover:scale-110 active:scale-95 flex items-center justify-center shrink-0">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.488 1.45 5.41 1.451 5.58 0 10.125-4.547 10.128-10.13.001-2.705-1.05-5.248-2.959-7.16C17.315 1.397 14.773.344 12.075.344c-5.584 0-10.13 4.547-10.134 10.131-.001 1.893.493 3.743 1.432 5.348L2.44 21.102l5.33-1.398c1.554.847 3.3.1 3.3.1zm11.567-5.697c-.316-.158-1.872-.925-2.16-1.03-.289-.104-.499-.158-.709.158-.21.317-.814 1.03-1.025 1.266-.21.237-.421.263-.737.105-.315-.158-1.332-.49-2.537-1.565-.938-.836-1.57-1.87-1.754-2.185-.185-.315-.02-.485.138-.642.142-.142.316-.368.474-.552.158-.184.21-.315.316-.526.105-.21.053-.395-.026-.553-.08-.158-.71-1.71-.973-2.34-.256-.617-.517-.533-.71-.543-.183-.009-.393-.011-.604-.011-.21 0-.552.08-.84.395-.29.317-1.104 1.08-1.104 2.633 0 1.553 1.13 3.054 1.288 3.264.158.21 2.224 3.397 5.39 4.764.753.325 1.34.52 1.799.665.757.24 1.446.207 1.99.126.608-.09 1.873-.764 2.136-1.464.263-.7.263-1.3.184-1.42-.08-.12-.29-.196-.605-.354z"/></svg>
+        </span>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script>
+        // Smooth Active Step Selector Code
+        function switchStep(stepNum) {
+            // Remove active styles from all buttons
+            document.querySelectorAll('.step-btn').forEach(btn => {
+                btn.classList.remove('border-violet-500/30', 'bg-slate-900/60');
+                btn.classList.add('border-slate-700', 'bg-slate-900/40');
+                btn.querySelector('span:first-child').classList.replace('text-violet-400', 'text-zinc-500');
+                btn.querySelector('span:last-child').classList.replace('text-white', 'text-zinc-300');
+            });
+
+            // Add active styles to selected button
+            const activeBtn = document.getElementById(`step-btn-${stepNum}`);
+            activeBtn.classList.add('border-violet-500/30', 'bg-slate-900/60');
+            activeBtn.classList.remove('border-slate-700', 'bg-slate-900/40');
+            activeBtn.querySelector('span:first-child').classList.replace('text-zinc-500', 'text-violet-400');
+            activeBtn.querySelector('span:last-child').classList.replace('text-zinc-300', 'text-white');
+
+            // Hide all content blocks
+            document.querySelectorAll('.step-content').forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            // Show selected content block
+            document.getElementById(`step-content-${stepNum}`).classList.remove('hidden');
+        }
+
+        // Project Estimator logic
+        let selectedScale = 'starter';
+        let scaleMultiplier = 1.0;
+
+        function selectScale(scale) {
+            selectedScale = scale;
+            
+            // Adjust multiplier
+            if (scale === 'starter') scaleMultiplier = 1.0;
+            if (scale === 'business') scaleMultiplier = 1.5;
+            if (scale === 'enterprise') scaleMultiplier = 3.0;
+
+            // Reset button active UI
+            document.querySelectorAll('.scale-btn').forEach(btn => {
+                btn.classList.remove('border-violet-500', 'bg-violet-500/10', 'text-white');
+                btn.classList.add('border-slate-700', 'bg-[#060c18]', 'text-slate-400');
+            });
+
+            const activeScaleBtn = document.getElementById(`scale-${scale}`);
+            activeScaleBtn.classList.remove('border-slate-700', 'bg-[#060c18]', 'text-slate-400');
+            activeScaleBtn.classList.add('border-violet-500', 'bg-violet-500/10', 'text-white');
+
+            calculateEstimate();
+        }
+
+        function calculateEstimate() {
+            let baseCost = 0;
+            if (document.getElementById('srv-web').checked) baseCost += parseFloat(document.getElementById('srv-web').value);
+            if (document.getElementById('srv-soft').checked) baseCost += parseFloat(document.getElementById('srv-soft').value);
+            if (document.getElementById('srv-ai').checked) baseCost += parseFloat(document.getElementById('srv-ai').value);
+            if (document.getElementById('srv-design').checked) baseCost += parseFloat(document.getElementById('srv-design').value);
+
+            const costEl = document.getElementById('calculated-cost');
+            const placeholder = document.getElementById('cost-placeholder');
+
+            if (baseCost === 0) {
+                costEl.classList.add('hidden');
+                placeholder.classList.remove('hidden');
+                return;
+            }
+
+            let finalCost = baseCost * scaleMultiplier;
+
+            // Format as Rupiah Currency
+            const formattedCost = new Intl.NumberFormat('id-ID', {
+                style: 'currency',
+                currency: 'IDR',
+                maximumFractionDigits: 0
+            }).format(finalCost);
+
+            costEl.textContent = formattedCost;
+            costEl.classList.remove('hidden');
+            placeholder.classList.add('hidden');
+        }
+
+        // WhatsApp redirect based on Estimator choices
+        function sendWhatsappEstimator() {
+            let services = [];
+            if (document.getElementById('srv-web').checked) services.push("Website & Landing Page");
+            if (document.getElementById('srv-soft').checked) services.push("Custom Software Dev");
+            if (document.getElementById('srv-ai').checked) services.push("AI & Chatbot Integration");
+            if (document.getElementById('srv-design').checked) services.push("UI/UX Design");
+
+            const estimate = document.getElementById('calculated-cost').textContent;
+            
+            let message = `Halo Palaganix Team, saya telah menghitung rencana kebutuhan digital saya melalui estimator web:\n\n`;
+            message += `- Layanan: ${services.join(', ') || 'Konsultasi Umum'}\n`;
+            message += `- Skala Proyek: ${selectedScale.toUpperCase()}\n`;
+            message += `- Estimasi Anggaran Rencana: ${estimate}\n\n`;
+            message += `Saya ingin berkonsultasi lebih lanjut dan mendapatkan penawaran resmi. Terima kasih!`;
+
+            const encodedMessage = encodeURIComponent(message);
+            window.location.href = `https://wa.me/6285762565278?text=${encodedMessage}`;
+        }
+
+        // Handle Contact Form Submission to WhatsApp
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const msgContent = document.getElementById('message').value;
+
+            let textMessage = `Halo Palaganix Team,\n\n`;
+            textMessage += `Saya mengajukan formulir konsultasi dari situs web Palaganix:\n\n`;
+            textMessage += `- Nama: ${name}\n`;
+            textMessage += `- WhatsApp: ${phone}\n`;
+            textMessage += `- Pesan Kebutuhan: ${msgContent}\n\n`;
+            textMessage += `Mohon hubungi saya secepatnya untuk berdiskusi lebih lanjut.`;
+
+            const encoded = encodeURIComponent(textMessage);
+            window.location.href = `https://wa.me/6285762565278?text=${encoded}`;
+        }
+
+        // WhatsApp label — show on tap for touch devices
+        const waBtn = document.querySelector('[aria-label="WhatsApp Us"]');
+        const waLabel = waBtn ? waBtn.querySelector('span:first-child') : null;
+        if (waBtn && waLabel) {
+            waBtn.addEventListener('click', function(e) {
+                const isTouchDevice = window.matchMedia('(hover: none)').matches;
+                if (isTouchDevice && waLabel.classList.contains('opacity-0')) {
+                    e.preventDefault();
+                    waLabel.classList.remove('opacity-0', 'translate-x-2');
+                    waLabel.classList.add('opacity-100', 'translate-x-0');
+                    setTimeout(() => {
+                        waLabel.classList.add('opacity-0', 'translate-x-2');
+                        waLabel.classList.remove('opacity-100', 'translate-x-0');
+                        window.location.href = waBtn.href;
+                    }, 1200);
+                }
+            });
+        }
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuPath = document.getElementById('menuPath');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                menuPath.setAttribute('d', 'M6 18L18 6M6 6l12 12'); // Switch to X
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuPath.setAttribute('d', 'M4 6h16M4 12h16m-7 6h7'); // Switch back to Hamburger
+            }
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuPath.setAttribute('d', 'M4 6h16M4 12h16m-7 6h7');
+            });
+        });
+
+        // FAQ Toggle Logic
+        function toggleFaq(faqNum) {
+            const answer = document.getElementById(`faq-answer-${faqNum}`);
+            const icon = document.getElementById(`faq-icon-${faqNum}`);
+            const isHidden = answer.classList.contains('hidden');
+            
+            if (isHidden) {
+                answer.classList.remove('hidden');
+                icon.textContent = '−';
+                icon.classList.add('rotate-180', 'text-violet-400');
+            } else {
+                answer.classList.add('hidden');
+                icon.textContent = '+';
+                icon.classList.remove('rotate-180', 'text-violet-400');
+            }
+        }
+    </script>
+    </div><!-- end #page-wrapper -->
+</body>
+</html>
